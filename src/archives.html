@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Jos Journal of Media and Communication Studies</title>
+    <style>
+      .hero-section {
+        position: relative;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: repeat;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .hero-section > .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Content -->
+
+    <!-- Navigation -->
+    <section
+      class="navbar w-full h-auto flex flex-col items-center justify-start gap-4"
+    >
+      <!-- Contact -->
+      <div
+        class="contact-nav w-full h-auto flex flex-col items-start py-2 px-4 gap-2 bg-unijos-blue md:flex-row md:items-center md:justify-between"
+      >
+        <div class="nameofcompany w-fit h-auto">
+          <h6 class="text-[11px] text-slate-300 font-sans font-medium">
+            Faculty of Communication and Media Studies · University of Jos,
+            Nigeria
+          </h6>
+        </div>
+
+        <div class="contact-info">
+          <div
+            class="mail w-fit h-auto flex flex-row justify-start items-center gap-2 text-slate-300 text-[11px] font-medium font-sans"
+          >
+            <a
+              href="mailto:jjmcs@unijos.edu.ng"
+              target="_blank"
+              class="hover:text-unijos-goldlight hover:font-medium font-sans"
+              ><span class="flex flex-row justify-start items-center gap-2"
+                ><span class="icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"
+                    />
+                    <path d="M3 7l9 6l9 -6" /></svg></span
+                >jjmcs@unijos.edu.ng</span
+              >
+            </a>
+            | ISSN (Online) · Bi-Annual
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div
+        class="logo-and-button-container w-full h-auto flex flex-row items-center justify-between gap-4 py-2 px-4 md:py-4 md:px-8 xl:px-[230px]"
+      >
+        <div
+          class="logo-container w-fit h-auto flex flex-row justify-start items-center gap-4"
+        >
+          <img
+            src="./images/logo.png"
+            alt="unijos-logo"
+            class="unijos-logo w-12 h-auto"
+          />
+
+          <div
+            class="title w-fit h-auto flex flex-col justify-start items-start gap-0"
+          >
+            <h3
+              class="text-[20px] font-bold text-unijos-blue flex flex-col gap-0 font-serif"
+            >
+              <span class="text-unijos-green font-serif">Jos Journal of</span>
+              Media and Communication Studies
+            </h3>
+            <p class="text-[11px] font-sans text-slate-500">
+              University of Jos · Department of Mass Communication · P.M.B.
+              2084, Jos, Plateau State, Nigeria
+            </p>
+          </div>
+        </div>
+
+        <a href="mailto:jjmcs@unijos.edu.ng">
+          <div
+            class="button-container w-fit h-auto hidden md:flex text-white bg-unijos-green flex-row justify-start items-center gap-1 py-2 px-4 rounded hover:bg-unijos-blue transition-colors font-sans font-bold text-[10px] cursor-pointer"
+          >
+            <span
+              class="w-fit h-auto flex flex-row justify-start items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-text"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+                />
+                <path
+                  d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2"
+                />
+                <path d="M9 12h6" />
+                <path d="M9 16h6" />
+              </svg>
+            </span>
+            Submit Manuscript
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div
+        class="nav-links w-full h-auto bg-unijos-green border-t-4 border-b-4 border-unijos-gold flex flex-row justify-s items-center xl:px-[230px]"
+      >
+        <ul
+          class="uppercase font-medium font-sans flex flex-wrap justify-start md:justify-start items-center text-[12px] text-slate-100"
+        >
+          <a
+            href="index.html"
+            class="w-fit h-auto p-4 flex flex-row justify-between items-center gap-1 cursor-pointer hover:bg-unijos-gold bg-unijos-gold transition-colors text-unijos-blue"
+          >
+            Home
+          </a>
+
+          <div
+            class="w-fit h-auto p-4 flex flex-row justify-between items-center gap-1 cursor-pointer hover:bg-unijos-gold transition-colors hover:text-unijos-blue relative"
+          >
+            Journal
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0"
+                />
+              </svg>
+            </span>
+            <ul
+              class="bg-white border-t-4 border-unijos-gold flex-col absolute left-0 top-12 text-unijos-blue hidden z-10 justify-start items-start text-[12px] font-semibold font-sans w-[200px] h-auto shadow-lg"
+            >
+              <a
+                href="about.html"
+                class="px-4 py-3 text-start hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-b border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >About the Journal</a
+              >
+              <a
+                href="aimandmission.html"
+                class="px-4 py-3 text-start text-unijos-green hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-b border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >Aim and Mission</a
+              >
+              <a
+                href="scope.html"
+                class="px-4 py-3 text-start hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >Scope of the Journal</a
+              >
+            </ul>
+          </div>
+
+          <div
+            class="w-fit h-auto p-4 flex flex-row justify-between items-center gap-1 cursor-pointer hover:bg-unijos-gold transition-colors hover:text-unijos-blue relative"
+          >
+            Editorial Panel
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0"
+                />
+              </svg>
+            </span>
+            <ul
+              class="bg-white border-t-4 border-unijos-gold flex-col absolute left-0 top-12 text-unijos-blue hidden z-10 justify-start items-start text-[12px] font-semibold font-sans w-[200px] h-auto shadow-lg"
+            >
+              <a
+                href="editorialboard.html"
+                class="px-4 py-3 text-start hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-b border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >Editorial Board</a
+              >
+            </ul>
+          </div>
+
+          <div
+            class="w-fit h-auto p-4 flex flex-row justify-between items-center gap-1 cursor-pointer hover:bg-unijos-gold transition-colors hover:text-unijos-blue relative"
+          >
+            Instructions for Authors
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0"
+                />
+              </svg>
+            </span>
+            <ul
+              class="bg-white border-t-4 border-unijos-gold flex-col absolute left-0 top-12 text-unijos-blue hidden z-10 justify-start items-start text-[12px] font-semibold font-sans w-[300px] h-auto shadow-lg"
+            >
+              <a
+                href="guidelines.html"
+                class="px-4 py-3 text-start hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-b border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >Guidelines for submission of Articles</a
+              >
+              <a
+                href="ethics.html"
+                class="px-4 py-3 text-start hover:bg-unijos-greenlight hover:text-unijos-green transition-colors border-slate-300 text-[11px] capitalize font-semibold w-full"
+                >Publication Ethics & Malpractice Statement</a
+              >
+            </ul>
+          </div>
+
+          <a
+            href="fees.html"
+            class="w-fit h-auto p-4 flex cursor-pointer hover:text-unijos-blue hover:bg-unijos-gold transition-colors"
+          >
+            Article Processing Charges
+          </a>
+          <a
+            href="archives.html"
+            class="w-fit h-auto p-4 flex cursor-pointer hover:text-unijos-blue hover:bg-unijos-gold transition-colors"
+          >
+            Archives
+          </a>
+          <a
+            href="contact.html"
+            class="w-fit h-auto p-4 flex cursor-pointer hover:text-unijos-blue hover:bg-unijos-gold transition-colors"
+          >
+            Contact
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Header section -->
+    <div
+      class="header w-full h-auto flex flex-col items-start justify-start gap-1 px-4 py-8 sm:px-8 xl:px-[230px]"
+    >
+      <h3
+        class="text-2xl font-serif font-semibold text-unijos-blue w-full h-auto"
+      >
+        Archive
+      </h3>
+
+      <p class="text-slate-500 text-[12px]">
+        Browse all published issues and articles from our journal
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-unijos-blue text-slate-100 border-t-4 border-unijos-gold w-full h-auto px-4 py-8 lg:px-8 xl:px-[230px]"
+    >
+      <div class="">
+        <div class="grid gap-10 lg:grid-cols-[1.55fr_1fr_1fr]">
+          <div class="space-y-4">
+            <h2
+              class="text-3xl font-bold tracking-tight font-serif w-fit h-auto flex flex-row justify-start items-center gap-2 text-unijos-gold"
+            >
+              <img
+                src="./images/logo.png"
+                alt="Unijos logo "
+                class="w-12 h-auto"
+              />
+              JJMCS
+            </h2>
+            <p class="max-w-lg text-sm leading-2 text-slate-300">
+              Jos Journal of Media and Communication Studies. Published by the
+              Department of Mass Communication, University of Jos, Nigeria.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <h3 class="text-lg font-medium font-serif text-white">
+              Navigation
+            </h3>
+            <ul class="space-y-1 text-sm text-slate-300">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-unijos-gold hover:underline transition-colors"
+                >
+                  About the Journal
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-unijos-gold hover:underline transition-colors"
+                >
+                  Call for Papers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="guidelines.html"
+                  class="text-unijos-gold hover:underline transition-colors"
+                >
+                  Author Guidelines
+                </a>
+              </li>
+              <li>
+                <a
+                  href="ethics.html"
+                  class="text-unijos-gold hover:underline transition-colors"
+                >
+                  Publication Ethics
+                </a>
+              </li>
+              <li>
+                <a
+                  href="editorial.html"
+                  class="text-unijos-gold hover:underline transition-colors"
+                >
+                  Editorial Board
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold font-serif text-white">Contact</h3>
+            <div class="space-y-3 text-sm text-slate-300">
+              <a
+                href="mailto:jjmcs@unijos.edu.ng"
+                class="block text-unijos-gold hover:underlinetransition-colors"
+              >
+                jjmcs@unijos.edu.ng
+              </a>
+              <p>+2348032570218</p>
+              <p>P.M.B. 2084, Jos, Plateau State, Nigeria</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 border-t border-slate-500/30 pt-6 text-sm text-slate-400"
+        >
+          <p>
+            © 2024 Jos Journal of Media and Communication Studies. All rights
+            reserved.
+          </p>
+          <p class="mt-2">
+            University of Jos · Faculty of Communication and Media Studies
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./index.js"></script>
+  </body>
+</html>

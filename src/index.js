@@ -49,4 +49,42 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById("first-name").value.trim();
+      const lastName = document.getElementById("last-name").value.trim();
+      const emailAddress = document
+        .getElementById("email-address")
+        .value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const consent = document.getElementById("consent").checked;
+
+      if (
+        !firstName ||
+        !lastName ||
+        !emailAddress ||
+        !subject ||
+        !message ||
+        !consent
+      ) {
+        alert(
+          "Please complete all required fields and agree to the privacy policy.",
+        );
+        return;
+      }
+
+      const mailtoEmail = "jjmcs@unijos.edu.ng";
+      const mailtoSubject = encodeURIComponent(subject);
+      const mailtoBody = encodeURIComponent(
+        `Name: ${firstName} ${lastName}\nEmail: ${emailAddress}\n\nMessage:\n${message}`,
+      );
+
+      window.location.href = `mailto:${mailtoEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+    });
+  }
 });
