@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.19"
