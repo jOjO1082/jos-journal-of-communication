@@ -686,6 +686,10 @@ video {
   height: 100%;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -737,6 +741,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .min-w-0 {
@@ -1649,9 +1657,21 @@ video {
     display: flex;
   }
 
+  .md\:h-12 {
+    height: 3rem;
+  }
+
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
+  }
+
+  .md\:flex-shrink-0 {
+    flex-shrink: 0;
   }
 
   .md\:flex-row {
