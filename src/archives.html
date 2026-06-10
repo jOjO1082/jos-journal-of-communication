@@ -295,7 +295,7 @@
     </section>
 
     <!-- Header section -->
-    <div
+    <!-- <div
       class="header w-full h-auto flex flex-col items-start justify-start gap-1 px-4 py-8 sm:px-8 xl:px-[230px]"
     >
       <h3
@@ -307,7 +307,97 @@
       <p class="text-slate-500 text-[12px]">
         Browse all published issues and articles from our journal
       </p>
-    </div>
+    </div> -->
+
+    <!-- All Documents Section -->
+    <section
+      class="all-documents w-full h-auto bg-slate-50 px-4 py-10 sm:px-8 xl:px-[230px]"
+    >
+      <div class="w-full h-auto">
+        <div class="mb-8">
+          <div
+            class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+          >
+            <div>
+              <p
+                class="text-sm uppercase text-unijos-green font-semibold tracking-[0.2em]"
+              >
+                All documents
+              </p>
+              <h2
+                class="mt-2 text-3xl font-serif font-semibold text-unijos-blue"
+              >
+                Browse the archive
+              </h2>
+              <p class="mt-2 max-w-2xl text-sm text-slate-600">
+                Search by title, author, or keyword and filter by publication
+                year between 2018 and 2026.
+              </p>
+            </div>
+
+            <div class="w-full md:w-[420px]">
+              <label class="sr-only" for="archive-search"
+                >Search documents</label
+              >
+              <div class="relative">
+                <span
+                  class="pointer-events-none absolute inset-y-0 left-4 flex items-center text-slate-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icon-tabler-search"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="10" cy="10" r="7" />
+                    <path d="M21 21l-4.35-4.35" />
+                  </svg>
+                </span>
+                <input
+                  id="archive-search"
+                  type="search"
+                  placeholder="Search by title, Author or keyword..."
+                  class="w-full rounded border border-slate-300 bg-white px-12 py-4 text-sm text-slate-700 outline-none transition duration-200 focus:border-unijos-green focus:ring-2 focus:ring-unijos-green/20"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <span class="text-sm font-semibold text-slate-700"
+              >Browse by Year</span
+            >
+            <div id="archive-year-buttons" class="flex flex-wrap gap-2"></div>
+          </div>
+
+          <div class="mt-4 text-sm text-slate-500">
+            <p id="archive-results" class="font-medium">
+              Showing all documents
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="archive-cards"
+          class="w-full h-auto grid gap-6 sm:grid-cols-2 xl:grid-cols-3"
+        ></div>
+
+        <p
+          id="archive-empty"
+          class="hidden rounded border border-slate-200 bg-white p-8 text-center text-sm text-slate-600"
+        >
+          No documents match your search. Try another title, author, keyword, or
+          year.
+        </p>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer
